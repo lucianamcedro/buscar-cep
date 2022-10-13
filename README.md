@@ -1,16 +1,14 @@
-# buscador_cep
+# Buscar CEP :spiral_notepad:
+Aplicativo simples para fins de estudos, que busca CEP utilizando: 
 
-A new Flutter project.
+- Dio 
+- API Via Cep
 
-## Getting Started
+<p align="center">
+   <img width="240" height="519" src="https://user-images.githubusercontent.com/86168060/195486591-639936a1-ae34-4357-815f-a9bc9aae66f7.png">
+   
+  
+</p>
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
