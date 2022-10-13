@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:buscador_cep/models/endereco_model.dart';
 import 'package:buscador_cep/repositories/cep_repository.dart';
 import 'package:buscador_cep/repositories/cep_repository_impl.dart';
@@ -105,11 +107,14 @@ class _HomePageState extends State<HomePage> {
                   color: Colors.black,
                 ),
               ),
-              Visibility(
-                visible: enderecoModel != null,
-                child: Text(
-                  '${enderecoModel?.logradouro} ${enderecoModel?.complemento} ${enderecoModel?.cep}',
-                  style: const TextStyle(fontSize: 18),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                child: Visibility(
+                  visible: enderecoModel != null,
+                  child: Text(
+                    '${enderecoModel?.logradouro}, ${enderecoModel?.bairro}. ${enderecoModel?.localidade}/${enderecoModel?.uf} - ${enderecoModel?.complemento} ${enderecoModel?.cep}',
+                    style: const TextStyle(fontSize: 18),
+                  ),
                 ),
               )
             ],
